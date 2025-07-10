@@ -40,12 +40,16 @@ def inter_number():
 
 
 def dating():
-    boys = ['Antony', 'Nick', 'Ivan', 'Bart', 'Rick', 'Martin']
+    boys = ['Antony', 'Nick', 'Ivan', 'Bart', 'Rick']
     girls = ['Kate', 'Emma', 'Rose', 'Anna', 'Kimberly']
     sorted_boys = sorted(boys)
     sorted_girls = sorted(girls)
     pairs = list(zip(sorted_boys, sorted_girls))
-    print('Идеальные пары:', pairs)
+    if len(sorted_boys) == len(sorted_girls):
+            print(f'Идеальные пары:', pairs)
+    else:
+        print('Внимание, кто-то может остаться без пары!')
+
 # dating()
 
 
