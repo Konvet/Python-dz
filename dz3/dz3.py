@@ -85,18 +85,18 @@ def statistics():
 # исходного списка составит словарь такого уровня вложенности, какова длина
 # исхондого списка.
 
-my_list = ['2018-01-01', 'yandex', 'cpc', 100]
+test_ex = ['2018-01-01', 'yandex', 'cpc', 100]
 
 
-def dict_from_list():
+def dict_from_list(my_list):
     pre_dict = {}
     for el in reversed(my_list):
         if not pre_dict:
             pre_dict = el
         else:
             pre_dict = {el: pre_dict}
-    print(pre_dict)
-# dict_from_list()
+    return pre_dict
+print (dict_from_list(test_ex))
 
 
 
@@ -113,7 +113,7 @@ def check_dz():
             statistics()
         case 5:
             dict_from_list()
-check_dz()
+# check_dz()
 
 
 
